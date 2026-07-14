@@ -69,7 +69,6 @@ section .text
     .remove_start_element:
         mov [r12], rcx
 
-        ; TODO: call free_fcnt()
         mov rdi, [rbx]      ; cur->data
         push rcx
         sub rsp, 8
